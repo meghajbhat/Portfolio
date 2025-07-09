@@ -341,8 +341,326 @@ export default function Home() {
             </span>
           </h1>
           <Carousel itemsPerView={3}>
-            {/* Each project card as a child */}
-            {/* ...copy each <Link>...</Link> project card here as a child of Carousel... */}
+            {/* Music Playlist Generator */}
+            <Link href="/experience/music-playlist" className="group">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">Music Playlist Generator</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </Link>
+            {/* Photo Editor */}
+            <Link href="/experience/photo-editor" className="group">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">Photo Editor</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </Link>
+            {/* Patient Records Management System */}
+            <Link href="/experience/patient-records" className="group">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">Patient Records Management System</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </Link>
+            {/* Simple Chatbot */}
+            <Link href="/experience/simple-chatbot" className="group">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">Simple Chatbot</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </Link>
+            {/* University Admission Chatbot */}
+            <Link href="/experience/university-chatbot" className="group">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">University Admission Chatbot</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </Link>
+            {/* Book Review System */}
+            <Link href="/experience/book-review" className="group">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">Book Review System</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </Link>
+            {/* Adaptive Technology for Autism Support */}
+            <Link href="/experience/autism-support" className="group">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">Adaptive Technology for Autism Support</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </Link>
+            {/* Legal Document Understanding */}
+            <Link href="/experience/legal-ai" className="group">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">Legal Document Understanding</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </Link>
+            {/* AI-Generated Image Detection */}
+            <Link href="/experience/ai-image-detection" className="group">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">AI-Generated Image Detection</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </Link>
+            {/* Portfolio Website */}
+            <Link href="/experience/portfolio" className="group">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">Portfolio Website</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </Link>
           </Carousel>
         </div>
       </section>
@@ -772,8 +1090,390 @@ export default function Home() {
             </span>
           </h1>
           <Carousel itemsPerView={3}>
-            {/* Each certificate card as a child */}
-            {/* ...copy each certificate card <div className="group ...">...</div> here as a child of Carousel... */}
+            {/* The Ultimate MySQL Bootcamp Certificate (NEW FIRST) */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">The Ultimate MySQL Bootcamp Certificate</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* Jira Certificate */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">Jira Certificate</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* Generative AI Certificate */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">Generative AI Certificate</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* Pandas Certificate */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">Pandas Certificate</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* Machine Learning Certificate */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">Machine Learning Certificate</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* Data Science Certificate */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">Data Science Certificate</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* GDSC Certificate */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">GDSC Certificate</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* ChatGPT and AI Tools Certificate */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">ChatGPT and AI Tools Certificate</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* OpenCV Certificate */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">OpenCV Certificate</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* Python Certificate */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">Python Certificate</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* SQL Basic HackerRank Certificate */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">SQL Basic HackerRank Certificate</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* cHEAL Symposium Certificate */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
+              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
+                <div className="space-y-6">
+                  <h3 className="text-3xl font-bold text-white">cHEAL Symposium Certificate</h3>
+                  <p className="text-emerald-400 text-lg">2023</p>
+                  
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
+                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+                  </div>
+                  
+                  <p className="text-gray-400 leading-relaxed">
+                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
+                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
+                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
+                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
+                    practical, data-driven solutions.
+                  </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    View Certificate
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </Carousel>
         </div>
       </section>
