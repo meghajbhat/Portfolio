@@ -137,7 +137,7 @@ export default function PatientRecordsProject() {
                 <ul className="list-disc pl-6 space-y-2 text-gray-400">
                   <li>Python</li>
                   <li>Flask</li>
-                  <li>SQLAlchemy</li>
+                  <li>MySQL</li>
                 </ul>
               </div>
               <div className="space-y-4">
@@ -146,8 +146,7 @@ export default function PatientRecordsProject() {
                   <h3 className="text-xl font-semibold">Database</h3>
                 </div>
                 <ul className="list-disc pl-6 space-y-2 text-gray-400">
-                  <li>SQLite</li>
-                  <li>PostgreSQL</li>
+                  <li>MySQL</li>
                 </ul>
               </div>
               <div className="space-y-4">

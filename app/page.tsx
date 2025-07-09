@@ -826,6 +826,50 @@ export default function Home() {
           </h1>
 
           <div className="certificates-grid relative z-10">
+
+            {/* SQL Certificate */}
+            <div
+              className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2"
+              onMouseMove={(e) => {
+                const card = e.currentTarget;
+                const rect = card.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width;
+                const y = (e.clientY - rect.top) / rect.height;
+                const rotateX = (y - 0.5) * 20;
+                const rotateY = (x - 0.5) * 20;
+                card.style.transform = `perspective(1000px) rotateX(${-rotateX}deg) rotateY(${rotateY}deg)`;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+              }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20 group-hover:border-purple-500/50 transition-all duration-500">
+                <div className="flex items-start justify-between">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-purple-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img src="/images/projects/udemy.png" alt="Kaggle" className="w-8 h-8 object-contain" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert</h3>
+                        <p className="text-purple-400">Udemy</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 flex justify-end">
+                  <button
+                    onClick={() => window.open('https://drive.google.com/file/d/1GqffUItV3u740F3qmrYOZ2FxUCb2BbhJ/view?usp=drive_link', '_blank')}
+                    className="flex items-center gap-2 px-4 py-2 bg-purple-500/10 rounded-xl text-purple-400 hover:bg-purple-500/20 transition-colors group"
+                  >
+                    View Certificate
+                    <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 opacity-0 group-hover:opacity-20 blur-xl transition-opacity -z-10"></div>
+            </div>
             
 
             {/* Generative AI Certificate */}
@@ -1254,36 +1298,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-            {/* AI and ChatGPT Tools */}
-            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
-              <div className="absolute inset-0 bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-violet-500/20 group-hover:border-violet-500/50 transition-all duration-500">
-                <div className="flex items-start justify-between">
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-violet-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <img src="/images/projects/skillnation.png" alt="HackerRank" className="w-8 h-8 object-contain" />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-white group-hover:text-violet-400 transition-colors">AI and ChatGPT Tools</h3>
-                        <p className="text-violet-400">Skill Nation</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-6 flex justify-end">
-                  <button 
-                    onClick={() => window.open('https://drive.google.com/file/d/1czpd00GM9ZfCyYbczzwSg39IYs4SD3K-/view?usp=drive_link', '_blank')}
-                    className="flex items-center gap-2 px-4 py-2 bg-green-500/10 rounded-xl text-green-400 hover:bg-green-500/20 transition-colors group"
-                  >
-                    View Certificate
-                    <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
 
           {/* Floating Elements */}
           <div className="absolute inset-0 pointer-events-none">
