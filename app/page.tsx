@@ -7,67 +7,6 @@ import emailjs from '@emailjs/browser'
 // Initialize EmailJS
 emailjs.init("-UCnHkBHJrirqj0Kf")
 
-// Carousel component for horizontal scrolling
-function Carousel({ children, itemsPerView = 1 }) {
-  const containerRef = React.useRef(null);
-  const [scrollIndex, setScrollIndex] = React.useState(0);
-  const totalItems = React.Children.count(children);
-  const maxIndex = Math.max(0, totalItems - itemsPerView);
-
-  // Responsive items per view
-  React.useEffect(() => {
-    function handleResize() {
-      if (window.innerWidth >= 1024) setScrollIndex(0);
-    }
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  const scrollTo = (index) => {
-    if (!containerRef.current) return;
-    const child = containerRef.current.children[index];
-    if (child) child.scrollIntoView({ behavior: 'smooth', inline: 'start' });
-    setScrollIndex(index);
-  };
-
-  return (
-    <div className="relative">
-      <button
-        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-[#1A2333]/80 rounded-full p-2 shadow-lg border border-emerald-500/20 hover:bg-emerald-500/20 transition disabled:opacity-30"
-        onClick={() => scrollTo(Math.max(0, scrollIndex - 1))}
-        disabled={scrollIndex === 0}
-        aria-label="Scroll left"
-        style={{ display: totalItems > itemsPerView ? 'block' : 'none' }}
-      >
-        <span className="text-2xl">&#8592;</span>
-      </button>
-      <div
-        ref={containerRef}
-        className="flex overflow-x-auto gap-8 scroll-smooth snap-x snap-mandatory pb-4"
-        style={{ scrollSnapType: 'x mandatory' }}
-      >
-        {React.Children.map(children, (child, i) => (
-          <div
-            className="snap-start flex-shrink-0 w-full lg:w-[calc(33%-2rem)] md:w-[calc(50%-2rem)]"
-            style={{ maxWidth: itemsPerView === 1 ? '100%' : undefined }}
-          >
-            {child}
-          </div>
-        ))}
-      </div>
-      <button
-        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-[#1A2333]/80 rounded-full p-2 shadow-lg border border-emerald-500/20 hover:bg-emerald-500/20 transition disabled:opacity-30"
-        onClick={() => scrollTo(Math.min(maxIndex, scrollIndex + 1))}
-        disabled={scrollIndex >= maxIndex}
-        aria-label="Scroll right"
-        style={{ display: totalItems > itemsPerView ? 'block' : 'none' }}
-      >
-        <span className="text-2xl">&#8594;</span>
-      </button>
-    </div>
-  );
-}
-
 export default function Home() {
   const heroRef = useRef<HTMLDivElement>(null)
   const [activeHackathon, setActiveHackathon] = useState(0)
@@ -340,7 +279,8 @@ export default function Home() {
               Projects.
             </span>
           </h1>
-          <Carousel itemsPerView={3}>
+          {/* 3D Grid Layout */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 perspective-1000">
             {/* Music Playlist Generator */}
             <Link href="/experience/music-playlist" className="group">
               <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
@@ -661,7 +601,7 @@ export default function Home() {
                 </div>
               </div>
             </Link>
-          </Carousel>
+          </div>
         </div>
       </section>
 
@@ -1089,7 +1029,7 @@ export default function Home() {
               Certificates.
             </span>
           </h1>
-          <Carousel itemsPerView={3}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
             {/* The Ultimate MySQL Bootcamp Certificate (NEW FIRST) */}
             <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
               <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
@@ -1474,7 +1414,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </Carousel>
+          </div>
         </div>
       </section>
 
