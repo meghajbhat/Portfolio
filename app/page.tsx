@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaCode, FaArrowRight, FaExternalLinkAlt } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaCode, FaArrowRight } from 'react-icons/fa'
 import emailjs from '@emailjs/browser'
 
 // Initialize EmailJS
@@ -182,16 +182,10 @@ export default function Home() {
                   <div className="w-12 h-12 rounded-full bg-[#0B1121] border-2 border-emerald-500/30 flex items-center justify-center overflow-hidden">
                     <img src="/images/projects/pes-logo.png" alt="CDSAML" className="w-8 h-8 object-contain" />
                   </div>
-                  <div className="text-left flex-1">
+                  <div className="text-left">
                     <h3 className="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">Research Intern - CDSAML</h3>
                     <p className="text-gray-400">CDSAML</p>
                   </div>
-                  <Link 
-                    href="/experience/cdsaml"
-                    className="px-4 py-2 rounded-lg bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-all"
-                  >
-                    Learn More
-                  </Link>
                 </div>
               </button>
 
@@ -207,18 +201,12 @@ export default function Home() {
               }} className="w-full" id="nexus-button">
                 <div className="group flex items-center gap-4 cursor-pointer p-4 rounded-xl border-2 border-transparent hover:border-emerald-500/30 hover:bg-[#1A2333]/50 transition-all duration-300">
                   <div className="w-12 h-12 rounded-full bg-[#0B1121] border-2 border-emerald-500/30 flex items-center justify-center overflow-hidden">
-                    <div className="text-2xl font-bold text-emerald-400">N</div>
+                    <img src="/images/projects/nexus-logo.png" alt="Nexus Info" className="w-8 h-8 object-contain" />
                   </div>
-                  <div className="text-left flex-1">
+                  <div className="text-left">
                     <h3 className="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">AIML Intern</h3>
                     <p className="text-gray-400">Nexus Info</p>
                   </div>
-                  <Link 
-                    href="/experience/nexus"
-                    className="px-4 py-2 rounded-lg bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-all"
-                  >
-                    Learn More
-                  </Link>
                 </div>
               </button>
             </div>
@@ -279,324 +267,230 @@ export default function Home() {
               Projects.
             </span>
           </h1>
+
           {/* 3D Grid Layout */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 perspective-1000">
             {/* Music Playlist Generator */}
             <Link href="/experience/music-playlist" className="group">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">Music Playlist Generator</h3>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+              <div className="relative h-[400px] rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2 hover:translate-y-[-10px] preserve-3d">
+                {/* Background Gradient Animation */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-emerald-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                {/* Project Content */}
+                <div className="relative h-full bg-[#1A2333]/90 backdrop-blur-sm p-8 border border-emerald-500/20 group-hover:border-emerald-500/50 transition-all duration-500">
+                  {/* Project Header */}
+                  <div className="flex justify-between items-start mb-6">
+                    <div className="space-y-2">
+                      <h3 className="text-2xl font-bold text-white group-hover:text-emerald-400 transition-colors duration-300">
+                        Music Playlist Generator
+                      </h3>
+                      <p className="text-gray-400">Music Management System</p>
+                    </div>
+                    <a 
+                      href="https://github.com/meghajbhat/Music-Playlist-Generator" 
+                      target="_blank" 
+                      className="w-12 h-12 rounded-xl bg-[#0B1121]/80 flex items-center justify-center border border-emerald-500/30 group-hover:border-emerald-500/70 transition-all duration-300 hover:scale-110"
+                    >
+                      <FaGithub className="text-xl text-gray-400 group-hover:text-emerald-400" />
+                    </a>
                   </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
+
+                  {/* Project Description */}
+                  <p className="text-gray-400 mb-8 line-clamp-3">
+                    A C-based program for managing music playlists with YouTube integration, featuring user management, playlist operations, and stack-based playback history.
                   </p>
-                  
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    Know More
-                    <span>→</span>
-                  </a>
+
+                  {/* Tech Stack */}
+                  <div className="absolute bottom-8 left-8 right-8">
+                    <div className="flex flex-wrap gap-3">
+                      <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30 group-hover:border-emerald-500/70 transition-all duration-300">C</span>
+                      <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30 group-hover:border-emerald-500/70 transition-all duration-300">Python</span>
+                      <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30 group-hover:border-emerald-500/70 transition-all duration-300">YouTube API</span>
+                    </div>
+                  </div>
+
+                  {/* Hover Effect Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-emerald-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
               </div>
             </Link>
+
             {/* Photo Editor */}
             <Link href="/experience/photo-editor" className="group">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">Photo Editor</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+              <div className="relative h-[400px] rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2 hover:translate-y-[-10px] preserve-3d">
+                {/* Background Gradient Animation */}
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 via-emerald-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                {/* Project Content */}
+                <div className="relative h-full bg-[#1A2333]/90 backdrop-blur-sm p-8 border border-emerald-500/20 group-hover:border-emerald-500/50 transition-all duration-500">
+                  {/* Project Header */}
+                  <div className="flex justify-between items-start mb-6">
+                    <div className="space-y-2">
+                      <h3 className="text-2xl font-bold text-white group-hover:text-emerald-400 transition-colors duration-300">
+                        Photo Editor
+                      </h3>
+                      <p className="text-gray-400">Image Processing Application</p>
+                    </div>
+                    <a 
+                      href="https://github.com/meghajbhat/Photo-Editor" 
+                      target="_blank" 
+                      className="w-12 h-12 rounded-xl bg-[#0B1121]/80 flex items-center justify-center border border-emerald-500/30 group-hover:border-emerald-500/70 transition-all duration-300 hover:scale-110"
+                    >
+                      <FaGithub className="text-xl text-gray-400 group-hover:text-emerald-400" />
+                    </a>
                   </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
+
+                  {/* Project Description */}
+                  <p className="text-gray-400 mb-8 line-clamp-3">
+                    A Python-based application for image processing with various filters and transformations, featuring a user-friendly interface built with Tkinter and OpenCV.
                   </p>
-                  
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
+
+                  {/* Tech Stack */}
+                  <div className="absolute bottom-8 left-8 right-8">
+                    <div className="flex flex-wrap gap-3">
+                      <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30 group-hover:border-emerald-500/70 transition-all duration-300">Python</span>
+                      <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30 group-hover:border-emerald-500/70 transition-all duration-300">OpenCV</span>
+                      <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30 group-hover:border-emerald-500/70 transition-all duration-300">Tkinter</span>
+                    </div>
+                  </div>
+
+                  {/* Hover Effect Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-emerald-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
               </div>
             </Link>
+
             {/* Patient Records Management System */}
             <Link href="/experience/patient-records" className="group">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">Patient Records Management System</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+              <div className="relative h-[400px] rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2 hover:translate-y-[-10px] preserve-3d">
+                {/* Background Gradient Animation */}
+                <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 via-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                {/* Project Content */}
+                <div className="relative h-full bg-[#1A2333]/90 backdrop-blur-sm p-8 border border-emerald-500/20 group-hover:border-emerald-500/50 transition-all duration-500">
+                  {/* Project Header */}
+                  <div className="flex justify-between items-start mb-6">
+                    <div className="space-y-2">
+                      <h3 className="text-2xl font-bold text-white group-hover:text-emerald-400 transition-colors duration-300">
+                        Patient Records Management System
+                      </h3>
+                      <p className="text-gray-400">Hospital Operations Management</p>
+                    </div>
+                    <a 
+                      href="https://github.com/meghajbhat/patient-records" 
+                      target="_blank" 
+                      className="w-12 h-12 rounded-xl bg-[#0B1121]/80 flex items-center justify-center border border-emerald-500/30 group-hover:border-emerald-500/70 transition-all duration-300 hover:scale-110"
+                    >
+                      <FaGithub className="text-xl text-gray-400 group-hover:text-emerald-400" />
+                    </a>
                   </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
+
+                  {/* Project Description */}
+                  <p className="text-gray-400 mb-8 line-clamp-3">
+                    A web-based application for efficient hospital operations management, featuring patient records, appointments, prescriptions, and billing with role-based access control.
                   </p>
-                  
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
+
+                  {/* Tech Stack */}
+                  <div className="absolute bottom-8 left-8 right-8">
+                    <div className="flex flex-wrap gap-3">
+                      <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30 group-hover:border-emerald-500/70 transition-all duration-300">MySQL</span>
+                      <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30 group-hover:border-emerald-500/70 transition-all duration-300">Python</span>
+                      <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30 group-hover:border-emerald-500/70 transition-all duration-300">Flask</span>
+                    </div>
+                  </div>
+
+                  {/* Hover Effect Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-emerald-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
               </div>
             </Link>
-            {/* Simple Chatbot */}
-            <Link href="/experience/simple-chatbot" className="group">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">Simple Chatbot</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+
+            {/* AI-Powered Chatbot */}
+            <Link href="/experience/chatbot" className="group">
+              <div className="relative h-[400px] rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2 hover:translate-y-[-10px] preserve-3d">
+                {/* Background Gradient Animation */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-emerald-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                {/* Project Content */}
+                <div className="relative h-full bg-[#1A2333]/90 backdrop-blur-sm p-8 border border-emerald-500/20 group-hover:border-emerald-500/50 transition-all duration-500">
+                  {/* Project Header */}
+                  <div className="flex justify-between items-start mb-6">
+                    <div className="space-y-2">
+                      <h3 className="text-2xl font-bold text-white group-hover:text-emerald-400 transition-colors duration-300">
+                        AI-Powered Chatbot
+                      </h3>
+                      <p className="text-gray-400">Intelligent Conversational AI</p>
+                    </div>
+                    <a 
+                      href="https://github.com/meghajbhat/chatbot" 
+                      target="_blank" 
+                      className="w-12 h-12 rounded-xl bg-[#0B1121]/80 flex items-center justify-center border border-emerald-500/30 group-hover:border-emerald-500/70 transition-all duration-300 hover:scale-110"
+                    >
+                      <FaGithub className="text-xl text-gray-400 group-hover:text-emerald-400" />
+                    </a>
                   </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
+
+                  {/* Project Description */}
+                  <p className="text-gray-400 mb-8 line-clamp-3">
+                    A simple chatbot using OpenAI's GPT-3.5-turbo model with client-server architecture for natural language processing and intelligent responses.
                   </p>
-                  
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
+
+                  {/* Tech Stack */}
+                  <div className="absolute bottom-8 left-8 right-8">
+                    <div className="flex flex-wrap gap-3">
+                      <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30 group-hover:border-emerald-500/70 transition-all duration-300">Python</span>
+                      <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30 group-hover:border-emerald-500/70 transition-all duration-300">ChatGPT API</span>
+                      <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30 group-hover:border-emerald-500/70 transition-all duration-300">Networks</span>
+                    </div>
+                  </div>
+
+                  {/* Hover Effect Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-emerald-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
               </div>
             </Link>
+
             {/* University Admission Chatbot */}
             <Link href="/experience/university-chatbot" className="group">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">University Admission Chatbot</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+              <div className="relative h-[400px] rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2 hover:translate-y-[-10px] preserve-3d">
+                {/* Background Gradient Animation */}
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 via-emerald-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                {/* Project Content */}
+                <div className="relative h-full bg-[#1A2333]/90 backdrop-blur-sm p-8 border border-emerald-500/20 group-hover:border-emerald-500/50 transition-all duration-500">
+                  {/* Project Header */}
+                  <div className="flex justify-between items-start mb-6">
+                    <div className="space-y-2">
+                      <h3 className="text-2xl font-bold text-white group-hover:text-emerald-400 transition-colors duration-300">
+                        University Admission Chatbot
+                      </h3>
+                      <p className="text-gray-400">Student Support System</p>
+                    </div>
+                    <a 
+                      href="https://github.com/meghajbhat/university-chatbot" 
+                      target="_blank" 
+                      className="w-12 h-12 rounded-xl bg-[#0B1121]/80 flex items-center justify-center border border-emerald-500/30 group-hover:border-emerald-500/70 transition-all duration-300 hover:scale-110"
+                    >
+                      <FaGithub className="text-xl text-gray-400 group-hover:text-emerald-400" />
+                    </a>
                   </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
+
+                  {/* Project Description */}
+                  <p className="text-gray-400 mb-8 line-clamp-3">
+                    An intelligent chatbot designed to assist prospective students with admission procedures, courses, and campus facilities using AIML and TensorFlow.
                   </p>
-                  
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </Link>
-            {/* Book Review System */}
-            <Link href="/experience/book-review" className="group">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">Book Review System</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
+
+                  {/* Tech Stack */}
+                  <div className="absolute bottom-8 left-8 right-8">
+                    <div className="flex flex-wrap gap-3">
+                      <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30 group-hover:border-emerald-500/70 transition-all duration-300">Python</span>
+                      <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30 group-hover:border-emerald-500/70 transition-all duration-300">AIML</span>
+                      <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30 group-hover:border-emerald-500/70 transition-all duration-300">TensorFlow</span>
+                    </div>
                   </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
-                  </p>
-                  
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </Link>
-            {/* Adaptive Technology for Autism Support */}
-            <Link href="/experience/autism-support" className="group">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">Adaptive Technology for Autism Support</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
-                  </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
-                  </p>
-                  
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </Link>
-            {/* Legal Document Understanding */}
-            <Link href="/experience/legal-ai" className="group">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">Legal Document Understanding</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
-                  </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
-                  </p>
-                  
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </Link>
-            {/* AI-Generated Image Detection */}
-            <Link href="/experience/ai-image-detection" className="group">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">AI-Generated Image Detection</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
-                  </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
-                  </p>
-                  
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </Link>
-            {/* Portfolio Website */}
-            <Link href="/experience/portfolio" className="group">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">Portfolio Website</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
-                  </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
-                  </p>
-                  
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
+
+                  {/* Hover Effect Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-emerald-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
               </div>
             </Link>
@@ -615,18 +509,10 @@ export default function Home() {
           </h1>
 
           <div className="max-w-4xl mx-auto">
-            {/* Programming Languages Category */}
+            {/* Programming Category */}
             <div className="mb-12">
-              <h3 className="text-xl font-bold text-[#8B5CF6] mb-6">&lt;Programming Languages&gt;</h3>
+              <h3 className="text-xl font-bold text-[#8B5CF6] mb-6">&lt;Programming&gt;</h3>
               <div className="grid grid-cols-3 md:grid-cols-6 gap-4 mb-4">
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/cpp.png" alt="C++" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">C++</p>
-                </div>
                 <div className="group">
                   <div className="skill-icon">
                     <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
@@ -638,10 +524,18 @@ export default function Home() {
                 <div className="group">
                   <div className="skill-icon">
                     <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/c.png" alt="C" className="w-12 h-12 object-contain" />
+                      <img src="/images/projects/cpp.png" alt="C++" className="w-12 h-12 object-contain" />
                     </div>
                   </div>
-                  <p className="text-center text-gray-400 mt-2">C</p>
+                  <p className="text-center text-gray-400 mt-2">C++</p>
+                </div>
+                <div className="group">
+                  <div className="skill-icon">
+                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
+                      <img src="/images/projects/js.png" alt="JavaScript" className="w-12 h-12 object-contain" />
+                    </div>
+                  </div>
+                  <p className="text-center text-gray-400 mt-2">JavaScript</p>
                 </div>
                 <div className="group">
                   <div className="skill-icon">
@@ -662,43 +556,19 @@ export default function Home() {
                 <div className="group">
                   <div className="skill-icon">
                     <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/js.png" alt="JavaScript" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">JavaScript</p>
-                </div>
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/java.png" alt="Java" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">Java</p>
-                </div>
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
                       <img src="/images/projects/matlab.png" alt="MATLAB" className="w-12 h-12 object-contain" />
                     </div>
                   </div>
                   <p className="text-center text-gray-400 mt-2">MATLAB</p>
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-[#8B5CF6] text-right">&lt;/Programming Languages&gt;</h3>
+              <h3 className="text-xl font-bold text-[#8B5CF6] text-right">&lt;/Programming&gt;</h3>
             </div>
 
             {/* Libraries/Frameworks Category */}
             <div className="mb-12">
-              <h3 className="text-xl font-bold text-[#8B5CF6] mb-6">&lt;Libraries/Frameworks&gt;</h3>
+              <h3 className="text-xl font-bold text-[#8B5CF6] mb-6">&lt;Libraries&gt;</h3>
               <div className="grid grid-cols-3 md:grid-cols-6 gap-4 mb-4">
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/opencv.png" alt="OpenCV" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">OpenCV</p>
-                </div>
                 <div className="group">
                   <div className="skill-icon">
                     <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
@@ -706,14 +576,6 @@ export default function Home() {
                     </div>
                   </div>
                   <p className="text-center text-gray-400 mt-2">React</p>
-                </div>
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/scikit.png" alt="Scikit-Learn" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">Scikit-Learn</p>
                 </div>
                 <div className="group">
                   <div className="skill-icon">
@@ -726,42 +588,18 @@ export default function Home() {
                 <div className="group">
                   <div className="skill-icon">
                     <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/html.png" alt="HTML" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">HTML</p>
-                </div>
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/css.png" alt="CSS" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">CSS</p>
-                </div>
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/pandas.png" alt="Pandas" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">Pandas</p>
-                </div>
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/numpy.png" alt="NumPy" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">NumPy</p>
-                </div>
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
                       <img src="/images/projects/tensorflow.png" alt="TensorFlow" className="w-12 h-12 object-contain" />
                     </div>
                   </div>
                   <p className="text-center text-gray-400 mt-2">TensorFlow</p>
+                </div>
+                <div className="group">
+                  <div className="skill-icon">
+                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
+                      <img src="/images/projects/opencv.png" alt="OpenCV" className="w-12 h-12 object-contain" />
+                    </div>
+                  </div>
+                  <p className="text-center text-gray-400 mt-2">OpenCV</p>
                 </div>
                 <div className="group">
                   <div className="skill-icon">
@@ -771,46 +609,14 @@ export default function Home() {
                   </div>
                   <p className="text-center text-gray-400 mt-2">Flask</p>
                 </div>
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/flutter.png" alt="Flutter" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">Flutter</p>
-                </div>
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/spring.png" alt="Spring Boot" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">Spring Boot</p>
-                </div>
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/nextjs.png" alt="Next.js" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">Next.js</p>
-                </div>
               </div>
-              <h3 className="text-xl font-bold text-[#8B5CF6] text-right">&lt;/Libraries/Frameworks&gt;</h3>
+              <h3 className="text-xl font-bold text-[#8B5CF6] text-right">&lt;/Libraries&gt;</h3>
             </div>
 
-            {/* Tools / Platforms Category */}
-            <div className="mb-12">
-              <h3 className="text-xl font-bold text-[#8B5CF6] mb-6">&lt;Tools / Platforms&gt;</h3>
+            {/* Tools Category */}
+            <div>
+              <h3 className="text-xl font-bold text-[#8B5CF6] mb-6">&lt;Tools&gt;</h3>
               <div className="grid grid-cols-3 md:grid-cols-6 gap-4 mb-4">
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/colab.png" alt="Google Colab" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">Google Colab</p>
-                </div>
                 <div className="group">
                   <div className="skill-icon">
                     <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
@@ -818,14 +624,6 @@ export default function Home() {
                     </div>
                   </div>
                   <p className="text-center text-gray-400 mt-2">GitHub</p>
-                </div>
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/kaggle.png" alt="Kaggle" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">Kaggle</p>
                 </div>
                 <div className="group">
                   <div className="skill-icon">
@@ -838,18 +636,10 @@ export default function Home() {
                 <div className="group">
                   <div className="skill-icon">
                     <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/kafka.png" alt="Apache Kafka" className="w-12 h-12 object-contain" />
+                      <img src="/images/projects/kafka.png" alt="Kafka" className="w-12 h-12 object-contain" />
                     </div>
                   </div>
-                  <p className="text-center text-gray-400 mt-2">Apache Kafka</p>
-                </div>
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/spark.png" alt="Spark" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">Spark</p>
+                  <p className="text-center text-gray-400 mt-2">Kafka</p>
                 </div>
                 <div className="group">
                   <div className="skill-icon">
@@ -859,64 +649,8 @@ export default function Home() {
                   </div>
                   <p className="text-center text-gray-400 mt-2">Hadoop</p>
                 </div>
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/jira.png" alt="Jira" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">Jira</p>
-                </div>
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/docker.png" alt="Docker" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">Docker</p>
-                </div>
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/vercel.png" alt="Vercel" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">Vercel</p>
-                </div>
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/maven.png" alt="Maven" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">Maven</p>
-                </div>
               </div>
-              <h3 className="text-xl font-bold text-[#8B5CF6] text-right">&lt;/Tools / Platforms&gt;</h3>
-            </div>
-
-            {/* Databases Category */}
-            <div>
-              <h3 className="text-xl font-bold text-[#8B5CF6] mb-6">&lt;Databases&gt;</h3>
-              <div className="grid grid-cols-3 md:grid-cols-6 gap-4 mb-4">
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/mongodb.png" alt="MongoDB" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">MongoDB</p>
-                </div>
-                <div className="group">
-                  <div className="skill-icon">
-                    <div className="hexagon bg-[#1A1A2E] hover:bg-[#1A1A2E]/80 transition-all duration-300 p-6 flex items-center justify-center transform hover:scale-110">
-                      <img src="/images/projects/mysql.png" alt="MySQL" className="w-12 h-12 object-contain" />
-                    </div>
-                  </div>
-                  <p className="text-center text-gray-400 mt-2">MySQL</p>
-                </div>
-              </div>
-              <h3 className="text-xl font-bold text-[#8B5CF6] text-right">&lt;/Databases&gt;</h3>
+              <h3 className="text-xl font-bold text-[#8B5CF6] text-right">&lt;/Tools&gt;</h3>
             </div>
           </div>
         </div>
@@ -1012,231 +746,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Certificates Section */}
-      <section id="certificates" className="py-24 relative overflow-hidden">
-        <div className="container mx-auto px-4 max-w-7xl">
-          {/* Background Effects */}
-          <div className="absolute inset-0">
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full filter blur-3xl animate-blob"></div>
-            <div className="absolute top-1/3 right-1/3 w-96 h-96 bg-blue-500/10 rounded-full filter blur-3xl animate-blob animation-delay-2000"></div>
-            <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full filter blur-3xl animate-blob animation-delay-4000"></div>
-          </div>
-
-          <h2 className="text-base font-medium text-center mb-4 text-gray-400 tracking-wider uppercase relative z-10">MY ACHIEVEMENTS</h2>
-          <h1 className="text-8xl font-bold text-center mb-16 relative z-10">
-            <span className="bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent">
-              Certificates.
-            </span>
-          </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
-            {/* The Ultimate MySQL Bootcamp Certificate (NEW FIRST) */}
-            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">The Ultimate MySQL Bootcamp Certificate</h3>
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* Jira Certificate */}
-            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">Jira Certificate</h3>
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* Generative AI Certificate */}
-            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">Generative AI Certificate</h3>
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* Pandas Certificate */}
-            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">Pandas Certificate</h3>
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* Machine Learning Certificate */}
-            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">Machine Learning Certificate</h3>
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* Data Science Certificate */}
-            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">Data Science Certificate</h3>
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* GDSC Certificate */}
-            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">GDSC Certificate</h3>
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* ChatGPT and AI Tools Certificate */}
-            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">ChatGPT and AI Tools Certificate</h3>
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* OpenCV Certificate */}
-            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">OpenCV Certificate</h3>
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* Python Certificate */}
-            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">Python Certificate</h3>
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* SQL Basic HackerRank Certificate */}
-            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">SQL Basic HackerRank Certificate</h3>
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* cHEAL Symposium Certificate */}
-            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
-              <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-white">cHEAL Symposium Certificate</h3>
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Education Section */}
       <section id="education" className="py-24 relative">
         <div className="container mx-auto px-4 max-w-6xl">
@@ -1262,7 +771,7 @@ export default function Home() {
                 <h3 className="text-3xl font-bold text-white mb-2">Computer Science Bachelors</h3>
                 <p className="text-emerald-400 text-lg mb-2">PES University, Bengaluru, India</p>
                 <p className="text-gray-400 mb-1">September 2022 - May 2026</p>
-                <p className="text-gray-400">CGPA: 7.5</p>
+                <p className="text-gray-400">CGPA: 7.47</p>
               </div>
             </div>
 
@@ -1299,7 +808,496 @@ export default function Home() {
         </div>
       </section>
 
-      
+      {/* Certificates Section */}
+      <section id="certificates" className="py-24 relative overflow-hidden">
+        <div className="container mx-auto px-4 max-w-7xl">
+          {/* Background Effects */}
+          <div className="absolute inset-0">
+            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full filter blur-3xl animate-blob"></div>
+            <div className="absolute top-1/3 right-1/3 w-96 h-96 bg-blue-500/10 rounded-full filter blur-3xl animate-blob animation-delay-2000"></div>
+            <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full filter blur-3xl animate-blob animation-delay-4000"></div>
+          </div>
+
+          <h2 className="text-base font-medium text-center mb-4 text-gray-400 tracking-wider uppercase relative z-10">MY ACHIEVEMENTS</h2>
+          <h1 className="text-8xl font-bold text-center mb-16 relative z-10">
+            <span className="bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent">
+              Certificates.
+            </span>
+          </h1>
+
+          <div className="certificates-grid relative z-10">
+            {/* Jira Certificate */}
+            <div 
+              className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2"
+              onMouseMove={(e) => {
+                const card = e.currentTarget;
+                const rect = card.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width;
+                const y = (e.clientY - rect.top) / rect.height;
+                const rotateX = (y - 0.5) * 20;
+                const rotateY = (x - 0.5) * 20;
+                card.style.transform = `perspective(1000px) rotateX(${-rotateX}deg) rotateY(${rotateY}deg)`;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+              }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-emerald-500/20 group-hover:border-emerald-500/50 transition-all duration-500">
+                <div className="flex items-start justify-between">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-emerald-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img src="/images/projects/atlassian.png" alt="Atlassian" className="w-8 h-8 object-contain" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">Get Started With Jira Work Management</h3>
+                        <p className="text-emerald-400">Atlassian</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 flex justify-end">
+                  <button 
+                    onClick={() => window.open('https://drive.google.com/file/d/1Qfnc5xVtXsuOH_TdosH0j5Qg5gtYDHj-/view?usp=drive_link', '_blank')}
+                    className="flex items-center gap-2 px-4 py-2 bg-emerald-500/10 rounded-xl text-emerald-400 hover:bg-emerald-500/20 transition-colors group"
+                  >
+                    View Certificate
+                    <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-emerald-500 to-blue-500 opacity-0 group-hover:opacity-20 blur-xl transition-opacity -z-10"></div>
+            </div>
+
+            {/* Generative AI Certificate */}
+            <div 
+              className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2"
+              onMouseMove={(e) => {
+                const card = e.currentTarget;
+                const rect = card.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width;
+                const y = (e.clientY - rect.top) / rect.height;
+                const rotateX = (y - 0.5) * 20;
+                const rotateY = (x - 0.5) * 20;
+                card.style.transform = `perspective(1000px) rotateX(${-rotateX}deg) rotateY(${rotateY}deg)`;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+              }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-blue-500/20 group-hover:border-blue-500/50 transition-all duration-500">
+                <div className="flex items-start justify-between">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-blue-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img src="/images/projects/coursera.png" alt="Coursera" className="w-8 h-8 object-contain" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">Introduction to Generative AI for Software Development</h3>
+                        <p className="text-blue-400">Coursera</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 flex justify-end">
+                  <button 
+                    onClick={() => window.open('https://drive.google.com/file/d/19ekVX1QYbL5twJjjVf7_bUmAY7hLrQrD/view?usp=drive_link', '_blank')}
+                    className="flex items-center gap-2 px-4 py-2 bg-blue-500/10 rounded-xl text-blue-400 hover:bg-blue-500/20 transition-colors group"
+                  >
+                    View Certificate
+                    <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-20 blur-xl transition-opacity -z-10"></div>
+            </div>
+
+            {/* Pandas Certificate */}
+            <div 
+              className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2"
+              onMouseMove={(e) => {
+                const card = e.currentTarget;
+                const rect = card.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width;
+                const y = (e.clientY - rect.top) / rect.height;
+                const rotateX = (y - 0.5) * 20;
+                const rotateY = (x - 0.5) * 20;
+                card.style.transform = `perspective(1000px) rotateX(${-rotateX}deg) rotateY(${rotateY}deg)`;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+              }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20 group-hover:border-purple-500/50 transition-all duration-500">
+                <div className="flex items-start justify-between">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-purple-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img src="/images/projects/kaggle.png" alt="Kaggle" className="w-8 h-8 object-contain" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">Pandas</h3>
+                        <p className="text-purple-400">Kaggle</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 flex justify-end">
+                  <button 
+                    onClick={() => window.open('https://drive.google.com/file/d/10j_FCCwXHr122mFIIyguiSgo0Fa3xGMs/view?usp=drive_link', '_blank')}
+                    className="flex items-center gap-2 px-4 py-2 bg-purple-500/10 rounded-xl text-purple-400 hover:bg-purple-500/20 transition-colors group"
+                  >
+                    View Certificate
+                    <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 opacity-0 group-hover:opacity-20 blur-xl transition-opacity -z-10"></div>
+            </div>
+
+            {/* Machine Learning Certificate */}
+            <div 
+              className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2"
+              onMouseMove={(e) => {
+                const card = e.currentTarget;
+                const rect = card.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width;
+                const y = (e.clientY - rect.top) / rect.height;
+                const rotateX = (y - 0.5) * 20;
+                const rotateY = (x - 0.5) * 20;
+                card.style.transform = `perspective(1000px) rotateX(${-rotateX}deg) rotateY(${rotateY}deg)`;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+              }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-red-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-pink-500/20 group-hover:border-pink-500/50 transition-all duration-500">
+                <div className="flex items-start justify-between">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-pink-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img src="/images/projects/kaggle.png" alt="Kaggle" className="w-8 h-8 object-contain" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-white group-hover:text-pink-400 transition-colors">Intro To Machine Learning</h3>
+                        <p className="text-pink-400">Kaggle</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 flex justify-end">
+                  <button 
+                    onClick={() => window.open('https://drive.google.com/file/d/158-LGU5K0PXMUWq34UKozraz6U9Y2qBe/view?usp=drive_link', '_blank')}
+                    className="flex items-center gap-2 px-4 py-2 bg-pink-500/10 rounded-xl text-pink-400 hover:bg-pink-500/20 transition-colors group"
+                  >
+                    View Certificate
+                    <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-pink-500 to-red-500 opacity-0 group-hover:opacity-20 blur-xl transition-opacity -z-10"></div>
+            </div>
+
+            {/* Data Science Certificate */}
+            <div 
+              className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2"
+              onMouseMove={(e) => {
+                const card = e.currentTarget;
+                const rect = card.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width;
+                const y = (e.clientY - rect.top) / rect.height;
+                const rotateX = (y - 0.5) * 20;
+                const rotateY = (x - 0.5) * 20;
+                card.style.transform = `perspective(1000px) rotateX(${-rotateX}deg) rotateY(${rotateY}deg)`;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+              }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-orange-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-red-500/20 group-hover:border-red-500/50 transition-all duration-500">
+                <div className="flex items-start justify-between">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-red-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img src="/images/projects/coursera.png" alt="Coursera" className="w-8 h-8 object-contain" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-white group-hover:text-red-400 transition-colors">What is Data Science?</h3>
+                        <p className="text-red-400">Coursera</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 flex justify-end">
+                  <button 
+                    onClick={() => window.open('https://drive.google.com/file/d/18Upa_pyLfHxWYQ6PEFh-5B85GZpnJ3D7/view?usp=drive_link', '_blank')}
+                    className="flex items-center gap-2 px-4 py-2 bg-red-500/10 rounded-xl text-red-400 hover:bg-red-500/20 transition-colors group"
+                  >
+                    View Certificate
+                    <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-red-500 to-orange-500 opacity-0 group-hover:opacity-20 blur-xl transition-opacity -z-10"></div>
+            </div>
+
+            {/* GDSC Certificate */}
+            <div 
+              className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2"
+              onMouseMove={(e) => {
+                const card = e.currentTarget;
+                const rect = card.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width;
+                const y = (e.clientY - rect.top) / rect.height;
+                const rotateX = (y - 0.5) * 20;
+                const rotateY = (x - 0.5) * 20;
+                card.style.transform = `perspective(1000px) rotateX(${-rotateX}deg) rotateY(${rotateY}deg)`;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+              }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-blue-500/20 group-hover:border-blue-500/50 transition-all duration-500">
+                <div className="flex items-start justify-between">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-blue-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img src="/images/projects/pes-logo.png" alt="GDSC" className="w-8 h-8 object-contain" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">GDSC Core Team Member</h3>
+                        <p className="text-blue-400">PESU</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 flex justify-end">
+                  <button 
+                    onClick={() => window.open('https://drive.google.com/file/d/12uw62jAenyrXbSC2fF5w6JI7zKP9oumw/view?usp=drive_link', '_blank')}
+                    className="flex items-center gap-2 px-4 py-2 bg-blue-500/10 rounded-xl text-blue-400 hover:bg-blue-500/20 transition-colors group"
+                  >
+                    View Certificate
+                    <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-20 blur-xl transition-opacity -z-10"></div>
+            </div>
+
+            {/* ChatGPT and AI Tools Certificate */}
+            <div 
+              className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2"
+              onMouseMove={(e) => {
+                const card = e.currentTarget;
+                const rect = card.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width;
+                const y = (e.clientY - rect.top) / rect.height;
+                const rotateX = (y - 0.5) * 20;
+                const rotateY = (x - 0.5) * 20;
+                card.style.transform = `perspective(1000px) rotateX(${-rotateX}deg) rotateY(${rotateY}deg)`;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+              }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-green-500/20 group-hover:border-green-500/50 transition-all duration-500">
+                <div className="flex items-start justify-between">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-green-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img src="/images/projects/skillnation.png" alt="Skill Nation" className="w-8 h-8 object-contain" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-white group-hover:text-green-400 transition-colors">ChatGPT and AI Tools</h3>
+                        <p className="text-green-400">Skill Nation</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 flex justify-end">
+                  <button 
+                    onClick={() => window.open('https://drive.google.com/file/d/1czpd00GM9ZfCyYbczzwSg39IYs4SD3K-/view?usp=drive_link', '_blank')}
+                    className="flex items-center gap-2 px-4 py-2 bg-green-500/10 rounded-xl text-green-400 hover:bg-green-500/20 transition-colors group"
+                  >
+                    View Certificate
+                    <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-green-500 to-teal-500 opacity-0 group-hover:opacity-20 blur-xl transition-opacity -z-10"></div>
+            </div>
+
+            {/* OpenCV Certificate */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
+              <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-green-500/20 group-hover:border-green-500/50 transition-all duration-500">
+                <div className="flex items-start justify-between">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-green-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img src="/images/projects/pes-logo.png" alt="PESU" className="w-8 h-8 object-contain" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-white group-hover:text-green-400 transition-colors">Introduction to OpenCV Using Python</h3>
+                        <p className="text-green-400">PESU</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 flex justify-end">
+                  <button 
+                    onClick={() => window.open('https://drive.google.com/file/d/1eK-NmivkYieuMvwN5UyDwosnavXYMsbw/view?usp=drive_link', '_blank')}
+                    className="flex items-center gap-2 px-4 py-2 bg-green-500/10 rounded-xl text-green-400 hover:bg-green-500/20 transition-colors group"
+                  >
+                    View Certificate
+                    <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Python Certificate */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2">
+              <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-teal-500/20 group-hover:border-teal-500/50 transition-all duration-500">
+                <div className="flex items-start justify-between">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-teal-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img src="/images/projects/coursera.png" alt="Coursera" className="w-8 h-8 object-contain" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-white group-hover:text-teal-400 transition-colors">Getting Started With Python</h3>
+                        <p className="text-teal-400">Coursera</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 flex justify-end">
+                  <button 
+                    onClick={() => window.open('https://drive.google.com/file/d/1uZOcj4gQkzhGY-8wT2KPNz_OfhL3hQIj/view?usp=drive_link', '_blank')}
+                    className="flex items-center gap-2 px-4 py-2 bg-teal-500/10 rounded-xl text-teal-400 hover:bg-teal-500/20 transition-colors group"
+                  >
+                    View Certificate
+                    <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* cHEAL Symposium Certificate */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-cyan-500/20 group-hover:border-cyan-500/50 transition-all duration-500">
+                <div className="flex items-start justify-between">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-cyan-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img src="/images/projects/pes-logo.png" alt="PESU" className="w-8 h-8 object-contain" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">cHEAL Symposium</h3>
+                        <p className="text-cyan-400">PESU</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 flex justify-end">
+                  <button 
+                    onClick={() => window.open('https://drive.google.com/file/d/1q_ifiAeaN8OvaR5D76v9p9EbGQXi9_sk/view?usp=drive_link', '_blank')}
+                    className="flex items-center gap-2 px-4 py-2 bg-cyan-500/10 rounded-xl text-cyan-400 hover:bg-cyan-500/20 transition-colors group"
+                  >
+                    View Certificate
+                    <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Second Generative AI Certificate */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2">
+              <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-violet-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-indigo-500/20 group-hover:border-indigo-500/50 transition-all duration-500">
+                <div className="flex items-start justify-between">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-indigo-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img src="/images/projects/coursera.png" alt="Coursera" className="w-8 h-8 object-contain" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">Introduction to Generative AI for Software Development</h3>
+                        <p className="text-indigo-400">Coursera</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 flex justify-end">
+                  <button 
+                    onClick={() => window.open('https://drive.google.com/file/d/1h-sPdjRfC-3ej0Dz7nCKBWTpASw_oI6O/view?usp=drive_link', '_blank')}
+                    className="flex items-center gap-2 px-4 py-2 bg-indigo-500/10 rounded-xl text-indigo-400 hover:bg-indigo-500/20 transition-colors group"
+                  >
+                    View Certificate
+                    <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* HackerRank SQL Certificate */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
+              <div className="absolute inset-0 bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-violet-500/20 group-hover:border-violet-500/50 transition-all duration-500">
+                <div className="flex items-start justify-between">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-violet-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img src="/images/projects/hackerrank.png" alt="HackerRank" className="w-8 h-8 object-contain" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-white group-hover:text-violet-400 transition-colors">SQL (Basic)</h3>
+                        <p className="text-violet-400">HackerRank</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 flex justify-end">
+                  <button 
+                    onClick={() => window.open('https://drive.google.com/file/d/1czpd00GM9ZfCyYbczzwSg39IYs4SD3K-/view?usp=drive_link', '_blank')}
+                    className="flex items-center gap-2 px-4 py-2 bg-green-500/10 rounded-xl text-green-400 hover:bg-green-500/20 transition-colors group"
+                  >
+                    View Certificate
+                    <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Floating Elements */}
+          <div className="absolute inset-0 pointer-events-none">
+            {Array.from({ length: 20 }).map((_, i) => (
+              <div
+                key={i}
+                className="absolute w-2 h-2 bg-emerald-400/20 rounded-full"
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                  animation: `float ${5 + Math.random() * 5}s linear infinite`,
+                  animationDelay: `${-Math.random() * 5}s`,
+                }}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-32 relative">
         <div className="container mx-auto px-4 max-w-5xl">
