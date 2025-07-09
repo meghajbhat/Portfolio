@@ -299,6 +299,13 @@ export default function Home() {
                     This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
                     practical, data-driven solutions.
                   </p>
+                  
+                  <a 
+                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
                     Know More
                     <span>→</span>
                   </a>
