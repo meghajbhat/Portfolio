@@ -1183,34 +1183,36 @@ export default function Home() {
           </h1>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
-            {/* Jira Certificate */}
-            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2">
-              <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-emerald-500/20 group-hover:border-emerald-500/50 transition-all duration-500">
+
+            {/* The Ultimate MySQL Bootcamp Certificate (NEW FIRST) */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-yellow-500/20 group-hover:border-yellow-500/50 transition-all duration-500">
                 <div className="flex items-start justify-between">
                   <div className="space-y-2">
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-emerald-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <img src="/images/projects/atlassian.png" alt="Atlassian" className="w-8 h-8 object-contain" />
+                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-yellow-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        {/* You can use a generic Udemy or SQL icon here, or leave blank if not available */}
+                        <img src="/images/projects/mysql.png" alt="Udemy" className="w-8 h-8 object-contain" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">Get Started With Jira Work Management</h3>
-                        <p className="text-emerald-400">Atlassian</p>
+                        <h3 className="text-xl font-bold text-white group-hover:text-yellow-400 transition-colors">The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert</h3>
+                        <p className="text-yellow-400">Udemy</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="mt-6 flex justify-end">
                   <button
-                    onClick={() => window.open('https://drive.google.com/file/d/1Qfnc5xVtXsuOH_TdosH0j5Qg5gtYDHj-/view?usp=drive_link', '_blank')}
-                    className="flex items-center gap-2 px-4 py-2 bg-emerald-500/10 rounded-xl text-emerald-400 hover:bg-emerald-500/20 transition-colors group"
+                    onClick={() => window.open('https://drive.google.com/file/d/1GqffUItV3u740F3qmrYOZ2FxUCb2BbhJ/view?usp=drive_link', '_blank')}
+                    className="flex items-center gap-2 px-4 py-2 bg-yellow-500/10 rounded-xl text-yellow-400 hover:bg-yellow-500/20 transition-colors group"
                   >
                     View Certificate
                     <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
                   </button>
                 </div>
               </div>
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-emerald-500 to-blue-500 opacity-0 group-hover:opacity-20 blur-xl transition-opacity -z-10"></div>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-yellow-500 to-orange-500 opacity-0 group-hover:opacity-20 blur-xl transition-opacity -z-10"></div>
             </div>
 
             {/* Generative AI Certificate */}
@@ -1333,66 +1335,7 @@ export default function Home() {
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-red-500 to-orange-500 opacity-0 group-hover:opacity-20 blur-xl transition-opacity -z-10"></div>
             </div>
 
-            {/* GDSC Certificate */}
-            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-blue-500/20 group-hover:border-blue-500/50 transition-all duration-500">
-                <div className="flex items-start justify-between">
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-blue-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <img src="/images/projects/pes-logo.png" alt="GDSC" className="w-8 h-8 object-contain" />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">GDSC Core Team Member</h3>
-                        <p className="text-blue-400">PESU</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-6 flex justify-end">
-                  <button
-                    onClick={() => window.open('https://drive.google.com/file/d/12uw62jAenyrXbSC2fF5w6JI7zKP9oumw/view?usp=drive_link', '_blank')}
-                    className="flex items-center gap-2 px-4 py-2 bg-blue-500/10 rounded-xl text-blue-400 hover:bg-blue-500/20 transition-colors group"
-                  >
-                    View Certificate
-                    <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
-                  </button>
-                </div>
-              </div>
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-20 blur-xl transition-opacity -z-10"></div>
-            </div>
-
-            {/* ChatGPT and AI Tools Certificate */}
-            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2">
-              <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-green-500/20 group-hover:border-green-500/50 transition-all duration-500">
-                <div className="flex items-start justify-between">
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-green-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <img src="/images/projects/skillnation.png" alt="Skill Nation" className="w-8 h-8 object-contain" />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-white group-hover:text-green-400 transition-colors">ChatGPT and AI Tools</h3>
-                        <p className="text-green-400">Skill Nation</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-6 flex justify-end">
-                  <button
-                    onClick={() => window.open('https://drive.google.com/file/d/1czpd00GM9ZfCyYbczzwSg39IYs4SD3K-/view?usp=drive_link', '_blank')}
-                    className="flex items-center gap-2 px-4 py-2 bg-green-500/10 rounded-xl text-green-400 hover:bg-green-500/20 transition-colors group"
-                  >
-                    View Certificate
-                    <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
-                  </button>
-                </div>
-              </div>
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-green-500 to-teal-500 opacity-0 group-hover:opacity-20 blur-xl transition-opacity -z-10"></div>
-            </div>
-
+            
             {/* OpenCV Certificate */}
             <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
               <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
@@ -1481,6 +1424,96 @@ export default function Home() {
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-orange-500 to-yellow-500 opacity-0 group-hover:opacity-20 blur-xl transition-opacity -z-10"></div>
             </div>
 
+            {/* Jira Certificate */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2">
+              <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-emerald-500/20 group-hover:border-emerald-500/50 transition-all duration-500">
+                <div className="flex items-start justify-between">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-emerald-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img src="/images/projects/atlassian.png" alt="Atlassian" className="w-8 h-8 object-contain" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">Get Started With Jira Work Management</h3>
+                        <p className="text-emerald-400">Atlassian</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 flex justify-end">
+                  <button
+                    onClick={() => window.open('https://drive.google.com/file/d/1Qfnc5xVtXsuOH_TdosH0j5Qg5gtYDHj-/view?usp=drive_link', '_blank')}
+                    className="flex items-center gap-2 px-4 py-2 bg-emerald-500/10 rounded-xl text-emerald-400 hover:bg-emerald-500/20 transition-colors group"
+                  >
+                    View Certificate
+                    <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-emerald-500 to-blue-500 opacity-0 group-hover:opacity-20 blur-xl transition-opacity -z-10"></div>
+            </div>
+
+            {/* GDSC Certificate */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-blue-500/20 group-hover:border-blue-500/50 transition-all duration-500">
+                <div className="flex items-start justify-between">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-blue-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img src="/images/projects/pes-logo.png" alt="GDSC" className="w-8 h-8 object-contain" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">GDSC Core Team Member</h3>
+                        <p className="text-blue-400">PESU</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 flex justify-end">
+                  <button
+                    onClick={() => window.open('https://drive.google.com/file/d/12uw62jAenyrXbSC2fF5w6JI7zKP9oumw/view?usp=drive_link', '_blank')}
+                    className="flex items-center gap-2 px-4 py-2 bg-blue-500/10 rounded-xl text-blue-400 hover:bg-blue-500/20 transition-colors group"
+                  >
+                    View Certificate
+                    <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-20 blur-xl transition-opacity -z-10"></div>
+            </div>
+
+            {/* ChatGPT and AI Tools Certificate */}
+            <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2">
+              <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="relative bg-[#1A2333]/90 backdrop-blur-sm rounded-2xl p-8 border border-green-500/20 group-hover:border-green-500/50 transition-all duration-500">
+                <div className="flex items-start justify-between">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-xl bg-[#0B1121] border border-green-500/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img src="/images/projects/skillnation.png" alt="Skill Nation" className="w-8 h-8 object-contain" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-white group-hover:text-green-400 transition-colors">ChatGPT and AI Tools</h3>
+                        <p className="text-green-400">Skill Nation</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 flex justify-end">
+                  <button
+                    onClick={() => window.open('https://drive.google.com/file/d/1czpd00GM9ZfCyYbczzwSg39IYs4SD3K-/view?usp=drive_link', '_blank')}
+                    className="flex items-center gap-2 px-4 py-2 bg-green-500/10 rounded-xl text-green-400 hover:bg-green-500/20 transition-colors group"
+                  >
+                    View Certificate
+                    <FaArrowRight className="transform group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-green-500 to-teal-500 opacity-0 group-hover:opacity-20 blur-xl transition-opacity -z-10"></div>
+            </div>
+
             {/* cHEAL Symposium Certificate */}
             <div className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:rotate-2">
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
@@ -1538,7 +1571,7 @@ export default function Home() {
                 <h3 className="text-3xl font-bold text-white mb-2">Computer Science Bachelors</h3>
                 <p className="text-emerald-400 text-lg mb-2">PES University, Bengaluru, India</p>
                 <p className="text-gray-400 mb-1">September 2022 - May 2026</p>
-                <p className="text-gray-400">CGPA: 7.47</p>
+                <p className="text-gray-400">CGPA: 7.5</p>
               </div>
             </div>
 
