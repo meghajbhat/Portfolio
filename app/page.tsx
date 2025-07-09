@@ -1041,15 +1041,6 @@ export default function Home() {
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
                   </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
-                  </p>
-                  
                   <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
@@ -1073,15 +1064,6 @@ export default function Home() {
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
                   </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
-                  </p>
-                  
                   <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
@@ -1104,17 +1086,7 @@ export default function Home() {
                   <div className="flex flex-wrap gap-3 mb-6">
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
-                  </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
-                  </p>
-                  
-                  <a 
+                  </div><a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer" 
@@ -1136,17 +1108,7 @@ export default function Home() {
                   <div className="flex flex-wrap gap-3 mb-6">
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
-                  </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
-                  </p>
-                  
-                  <a 
+                  </div><a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer" 
@@ -1169,15 +1131,6 @@ export default function Home() {
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
                   </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
-                  </p>
-                  
                   <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
@@ -1201,15 +1154,6 @@ export default function Home() {
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
                   </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
-                  </p>
-                  
                   <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
@@ -1233,15 +1177,6 @@ export default function Home() {
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
                   </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
-                  </p>
-                  
                   <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
@@ -1265,15 +1200,6 @@ export default function Home() {
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
                   </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
-                  </p>
-                  
                   <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
@@ -1297,15 +1223,6 @@ export default function Home() {
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
                   </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
-                  </p>
-                  
                   <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
@@ -1329,15 +1246,6 @@ export default function Home() {
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
                   </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
-                  </p>
-                  
                   <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
@@ -1361,15 +1269,6 @@ export default function Home() {
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
                   </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
-                  </p>
-                  
                   <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
@@ -1393,15 +1292,6 @@ export default function Home() {
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
                   </div>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    This project aims to develop a sophisticated predictive model to estimate the average dinner costs at
-                    restaurants in Bengaluru, utilizing data from popular eateries and Zomato. Through meticulous data
-                    analysis, cleansing, and strategic feature engineering, the dataset is optimized for accurate predictions.
-                    This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
-                    practical, data-driven solutions.
-                  </p>
-                  
                   <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
