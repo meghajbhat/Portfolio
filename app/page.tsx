@@ -826,7 +826,6 @@ export default function Home() {
           </h1>
 
           <div className="certificates-grid relative z-10">
-
             {/* SQL Certificate */}
             <div
               className="group relative transform-gpu transition-all duration-500 hover:scale-105 hover:-rotate-2"
@@ -1298,6 +1297,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
 
           {/* Floating Elements */}
           <div className="absolute inset-0 pointer-events-none">
@@ -1314,7 +1314,7 @@ export default function Home() {
               />
             ))}
           </div>
-        </div>
+        </div> {/* <-- Ensure this closing div is present for the container */}
       </section>
 
       {/* Contact Section */}
