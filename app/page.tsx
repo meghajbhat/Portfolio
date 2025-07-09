@@ -286,7 +286,6 @@ export default function Home() {
               <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
                 <div className="space-y-6">
                   <h3 className="text-3xl font-bold text-white">Music Playlist Generator</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
                   
                   <div className="flex flex-wrap gap-3 mb-6">
                     <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
@@ -300,14 +299,7 @@ export default function Home() {
                     This project was undertaken during my college hackathon, Epoch, showcasing our commitment to
                     practical, data-driven solutions.
                   </p>
-                  
-                  <a 
-                    href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-lg hover:from-emerald-600 hover:to-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    View Certificate
+                    Know More
                     <span>→</span>
                   </a>
                 </div>
@@ -1035,12 +1027,6 @@ export default function Home() {
               <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
                 <div className="space-y-6">
                   <h3 className="text-3xl font-bold text-white">The Ultimate MySQL Bootcamp Certificate</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
-                  </div>
                   <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
@@ -1058,12 +1044,6 @@ export default function Home() {
               <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
                 <div className="space-y-6">
                   <h3 className="text-3xl font-bold text-white">Jira Certificate</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
-                  </div>
                   <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
@@ -1081,12 +1061,7 @@ export default function Home() {
               <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
                 <div className="space-y-6">
                   <h3 className="text-3xl font-bold text-white">Generative AI Certificate</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
-                  </div><a 
+                  <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer" 
@@ -1103,12 +1078,7 @@ export default function Home() {
               <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
                 <div className="space-y-6">
                   <h3 className="text-3xl font-bold text-white">Pandas Certificate</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
-                  </div><a 
+                  <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer" 
@@ -1125,12 +1095,6 @@ export default function Home() {
               <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
                 <div className="space-y-6">
                   <h3 className="text-3xl font-bold text-white">Machine Learning Certificate</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
-                  </div>
                   <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
@@ -1148,12 +1112,6 @@ export default function Home() {
               <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
                 <div className="space-y-6">
                   <h3 className="text-3xl font-bold text-white">Data Science Certificate</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
-                  </div>
                   <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
@@ -1171,12 +1129,6 @@ export default function Home() {
               <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
                 <div className="space-y-6">
                   <h3 className="text-3xl font-bold text-white">GDSC Certificate</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
-                  </div>
                   <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
@@ -1194,12 +1146,6 @@ export default function Home() {
               <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
                 <div className="space-y-6">
                   <h3 className="text-3xl font-bold text-white">ChatGPT and AI Tools Certificate</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
-                  </div>
                   <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
@@ -1217,12 +1163,6 @@ export default function Home() {
               <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
                 <div className="space-y-6">
                   <h3 className="text-3xl font-bold text-white">OpenCV Certificate</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
-                  </div>
                   <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
@@ -1240,12 +1180,6 @@ export default function Home() {
               <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
                 <div className="space-y-6">
                   <h3 className="text-3xl font-bold text-white">Python Certificate</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
-                  </div>
                   <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
@@ -1263,12 +1197,6 @@ export default function Home() {
               <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
                 <div className="space-y-6">
                   <h3 className="text-3xl font-bold text-white">SQL Basic HackerRank Certificate</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
-                  </div>
                   <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
@@ -1286,12 +1214,6 @@ export default function Home() {
               <div className="relative w-full h-full bg-[#1A2333]/90 backdrop-blur-lg rounded-3xl p-8 hover:transform hover:rotate-y-12 transition-all duration-500 border border-emerald-500/10 hover:border-emerald-500/30">
                 <div className="space-y-6">
                   <h3 className="text-3xl font-bold text-white">cHEAL Symposium Certificate</h3>
-                  <p className="text-emerald-400 text-lg">2023</p>
-                  
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Python</span>
-                    <span className="px-4 py-2 text-sm rounded-xl bg-[#0B1121]/80 text-emerald-400 border border-emerald-500/30">Data Analytics</span>
-                  </div>
                   <a 
                     href="https://drive.google.com/file/d/1LxPOOFp06ao65BFUbHsfI0y9nncpK59w/view?usp=drive_link"
                     target="_blank"
